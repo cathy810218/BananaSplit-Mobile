@@ -30,7 +30,10 @@ class individualGroupViewController: UIViewController {
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? Dictionary<String, Any>
                 if let users = jsonResult!["users"] as? [Dictionary<String, Any>] {
                     for user in users {
-                        self.users.append(User(json: ["name": user["name"], "id": user["id"] ?? -1]))
+                        self.users.append(User(json: [
+                            "name": user["name"] ?? "",
+                            "id": user["id"] ?? -1,
+                            "accId": user["accId"] ?? "N/A"]))
                     }
                 }
 

@@ -13,12 +13,13 @@ class User {
     var id: NSNumber?
     var name: String?
     var ammountToPay: NSNumber?
-    var lastFourAccountNumber: NSNumber?
+    var accId: String?
     init(json: [String: Any]) {
         self.json = json
         self.id = json["id"] as? NSNumber
         self.name = json["name"] as? String
         self.ammountToPay = 0
+        self.accId = json["accId"] as? String
     }
     
     var description: String {
