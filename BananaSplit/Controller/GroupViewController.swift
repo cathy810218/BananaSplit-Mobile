@@ -12,6 +12,9 @@ class GroupViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     let reuseIdentifier = "cell"
     var items = ["Friends", "Family", "Roommate"]
+    var currentSelectedGroup: IndexPath?
+    
+
     
     @IBOutlet weak var name: UITextField!
     @IBAction func addGroup(_ sender: Any) {
@@ -62,6 +65,17 @@ class GroupViewController: UIViewController, UICollectionViewDelegate, UICollect
         }
     }
 
+    @IBAction func deleteGroup(_ sender: UIButton) {
+        if let cell = sender.superview?.superview as? UICollectionViewCell{
+            let indexPath = collectionVIew.indexPath(for: cell)
+            items.remove(at: (indexPath?.row)!)
+            collectionVIew.reloadData()
+        }
+//        let cell = sender as? UICollectionViewCell
+    //    let indexPath = self.collectionVIew.indexPath(for: cell!)
+       
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         name.clearsOnBeginEditing = true
