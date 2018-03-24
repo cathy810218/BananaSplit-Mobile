@@ -21,7 +21,9 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.delegate = self
         tableView.estimatedRowHeight = 100
         self.accounts = []
-        API().getCredientials()
+        // ignore credential call for now. Credentials last 2 weeks which is more than enough time for demo.
+        // TODO: update API calls to include parameter for credentials and remove credentials from constants.
+        // API().getCredientials()
         loadMockData()
     }
     
@@ -33,7 +35,9 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
             }
             if (accounts != nil) {
                 self.accounts = accounts!
-                print(self.accounts)
+                for account in accounts as! [Account] {
+                    print(account.description)
+                }
                 self.tableView.reloadData()
             }
         }

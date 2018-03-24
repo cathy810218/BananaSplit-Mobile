@@ -30,6 +30,7 @@
 		C3511E4A20663EA100F0B729 /* controllerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3511E4920663EA100F0B729 /* controllerViewCell.swift */; };
 		C3D462E620664BD00079C5B1 /* individualGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D462E520664BD00079C5B1 /* individualGroupViewController.swift */; };
 		C3D462EC2066621B0079C5B1 /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D462EB2066621B0079C5B1 /* GroupTableViewCell.swift */; };
+		A2251A34206672060016CBEE /* InternalTransferDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2251A33206672060016CBEE /* InternalTransferDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		C3511E4920663EA100F0B729 /* controllerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controllerViewCell.swift; sourceTree = "<group>"; };
 		C3D462E520664BD00079C5B1 /* individualGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = individualGroupViewController.swift; sourceTree = "<group>"; };
 		C3D462EB2066621B0079C5B1 /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		A2251A33206672060016CBEE /* InternalTransferDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalTransferDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				3DAD1D9320662B6500B12097 /* User.swift */,
 				3DAD1D9520662B8C00B12097 /* Group.swift */,
 				5F3CB29F2066444700CB4C31 /* Account.swift */,
+				A2251A33206672060016CBEE /* InternalTransferDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			files = (
 				3DAD1D9F2066318A00B12097 /* GroupViewController.swift in Sources */,
 				5F3CB2A420665BBF00CB4C31 /* AccountCell.swift in Sources */,
+				A2251A34206672060016CBEE /* InternalTransferDetail.swift in Sources */,
 				3DAD1D8E20662A8800B12097 /* LandingViewController.swift in Sources */,
 				C3511E4A20663EA100F0B729 /* controllerViewCell.swift in Sources */,
 				3DAD1DA12066319500B12097 /* AccountViewController.swift in Sources */,
