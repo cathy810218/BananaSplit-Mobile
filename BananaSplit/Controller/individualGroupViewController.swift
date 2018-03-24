@@ -21,6 +21,7 @@ class individualGroupViewController: UIViewController, UITableViewDelegate, UITa
     var nums: [Int] = []
     var timer = Timer()
     var second = 5
+    var areAllRequest = false
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -82,7 +83,14 @@ class individualGroupViewController: UIViewController, UITableViewDelegate, UITa
                 }
                 self.users[i].transferId = transferRequestId
                 if i == self.nums.count - 1 {
+                    self.areAllRequest = true
                     self.tableView.reloadData()
+                    let alertController = UIAlertController(title: "Succeed!", message: "You have successfully sent the requests to all the members!", preferredStyle: UIAlertControllerStyle.alert)
+                    alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alertController, animated: true, completion: {
+                        // update cell to show
+                        self.tableView.reloadData()
+                    })
                 }
           })
         }
@@ -114,8 +122,14 @@ class individualGroupViewController: UIViewController, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MemberCell", for: indexPath) as! MemberTableViewCell
         cell.nameLabel.text = self.users[indexPath.row].name
+        
         cell.bananaImageView!.image = self.bananaImgs[indexPath.row]
         cell.splitAmountLabel.text = self.debts[indexPath.row]
+        if areAllRequest {
+            cell.checkBtn.setImage(UIImage(named: "bill-pay"), for: UIControlState.normal)
+            cell.setSelected(true, animated: false)
+        }
+
         return cell
     }
     
