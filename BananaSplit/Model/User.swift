@@ -16,10 +16,10 @@ class User {
     var accId: String?
     init(json: [String: Any]) {
         self.json = json
-        self.id = json["id"] as? NSNumber
-        self.name = json["name"] as? String
+        self.id = json["id"] as? NSNumber ?? 0
+        self.name = json["name"] as? String ?? ""
         self.ammountToPay = 0
-        self.accId = json["accId"] as? String
+        self.accId = json["accId"] as? String ?? ""
     }
     
     var description: String {
