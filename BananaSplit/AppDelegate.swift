@@ -12,13 +12,35 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    var accounViewController: AccountViewController?
+    var createAccountViewController: CreateAccountViewController?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        if let token = UserDefaults.standard.getAccessToken() {
+//            
+//        } else {
+//            self.presentCreateAccountController()
+//        }
         return true
     }
 
+    func presentCreateAccountController() {
+        if let accountViewController = self.window?.rootViewController as? AccountViewController, let storyboard = accountViewController.storyboard {
+            
+            if let createAccountViewController = storyboard.instantiateViewController(withIdentifier: "CreateAccount") as? CreateAccountViewController {
+                
+                accountViewController.addChildViewController(createAccountViewController)
+                accountViewController.view.addSubview(createAccountViewController.view)
+                
+                createAccountViewController.didMove(toParentViewController: accountViewController)
+                
+                self.createAccountViewController = createAccountViewController
+                self.accounViewController = accountViewController
+            }
+        }
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
