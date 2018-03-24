@@ -16,7 +16,9 @@ class CreateAccountViewController: UIViewController {
         navigationController?.navigationBar.barTintColor = UIColor.white
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.tintColor = UIColor.brown
-
+        let img = UIImage()
+        navigationController?.navigationBar.shadowImage = img
+        self.navigationController?.navigationBar.setBackgroundImage(img, for: UIBarMetrics.default)
 
         
         let imageView = UIImageView(image: UIImage(named: "logo"))
