@@ -99,7 +99,6 @@ class API {
         let headers = ["Accept": "application/json;v=0",
                        "Authorization": "Bearer " + accessToken]
         
-        print()
         // build and send request
         Alamofire.request(
             url,
