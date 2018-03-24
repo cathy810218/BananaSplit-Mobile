@@ -9,16 +9,22 @@
 import Foundation
 
 class Account {
+    var json: [String : Any]
     var accountNickname: String?;
     var bankName: String?;
     var productName: String?;
     var lastFourAccountNumber: NSNumber?;
     var availableBalance: NSNumber?;
     init(json: [String: Any]) {
+        self.json = json
         self.accountNickname = json["accountNickname"] as? String
         self.bankName = json["bankName"] as? String
         self.productName = json["productName"] as? String
         self.lastFourAccountNumber = json["lastFourAccountNumber"] as? NSNumber
         self.availableBalance = json["availableBalance"] as? NSNumber
+    }
+    
+    var description: String {
+        return "\(json)"
     }
 }
