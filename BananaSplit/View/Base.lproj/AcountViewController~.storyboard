@@ -61,7 +61,7 @@
                                 </constraints>
                                 <state key="normal" image="login-boton"/>
                                 <connections>
-                                    <segue destination="pZs-eZ-R8S" kind="show" id="1ig-RX-U9f"/>
+                                    <segue destination="ILm-1M-ynt" kind="show" id="1ig-RX-U9f"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hf-Lf-m9G">
@@ -159,6 +159,21 @@
             </objects>
             <point key="canvasLocation" x="-1604" y="-1121.2893553223389"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="HNl-9o-yEv">
+            <objects>
+                <viewController id="ILm-1M-ynt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zdd-1c-p6B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="s85-4y-kxK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIj-Bl-SfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-817" y="-1128"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="6hx-FO-rQb">
             <objects>
@@ -176,14 +191,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K8u-dL-8lu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2407" y="-1121"/>
-        </scene>
-        <!--AccountViewController-->
-        <scene sceneID="JtL-RF-QhS">
-            <objects>
-                <viewControllerPlaceholder storyboardName="AccountViewController" id="pZs-eZ-R8S" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="77D-qf-0CN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-817" y="-1128"/>
         </scene>
     </scenes>
     <resources>
