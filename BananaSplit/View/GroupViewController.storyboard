@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F56-3Q-kQX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F56-3Q-kQX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Group View Controller-->
+        <!--Group-->
         <scene sceneID="4IH-Pl-jGi">
             <objects>
                 <viewController id="F56-3Q-kQX" customClass="GroupViewController" customModule="BananaSplit" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,6 +82,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="D96-4x-afL"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Group" image="group" id="0TG-BI-4QA">
+                        <color key="badgeColor" red="0.42128151655197144" green="0.16789877414703369" blue="0.083648256957530975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="collectionVIew" destination="3AS-IO-dmq" id="cEV-jM-sHq"/>
                         <outlet property="name" destination="csD-Aw-vb9" id="mXa-J1-rF8"/>
@@ -121,6 +130,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add" width="61" height="54"/>
+        <image name="group" width="27" height="27"/>
     </resources>
 </document>
