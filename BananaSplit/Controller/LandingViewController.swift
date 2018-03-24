@@ -12,6 +12,7 @@ class LandingViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        API().getCredientials();
         // Do any additional setup after loading the view.
     }
 
