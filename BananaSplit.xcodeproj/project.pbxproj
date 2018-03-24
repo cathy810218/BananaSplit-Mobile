@@ -24,6 +24,7 @@
 		5F3CB2A02066444700CB4C31 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CB29F2066444700CB4C31 /* Account.swift */; };
 		5F3CB2A420665BBF00CB4C31 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CB2A320665BBF00CB4C31 /* AccountCell.swift */; };
 		5F3CB2A620665E2400CB4C31 /* AccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3CB2A520665E2400CB4C31 /* AccountCell.xib */; };
+		3DCAFFEC206655E400C69B12 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCAFFEB206655E400C69B12 /* CreateAccountViewController.swift */; };
 		96284EB2BBB761E41D54CF25 /* Pods_BananaSplit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776AE34DEFBB7346F408799D /* Pods_BananaSplit.framework */; };
 		C3511E4A20663EA100F0B729 /* controllerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3511E4920663EA100F0B729 /* controllerViewCell.swift */; };
 		C3D462E620664BD00079C5B1 /* individualGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D462E520664BD00079C5B1 /* individualGroupViewController.swift */; };
@@ -51,6 +52,7 @@
 		5F3CB29F2066444700CB4C31 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		5F3CB2A320665BBF00CB4C31 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 		5F3CB2A520665E2400CB4C31 /* AccountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountCell.xib; sourceTree = "<group>"; };
+		3DCAFFEB206655E400C69B12 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		68BA86B751E5551A2F9188CA /* Pods-BananaSplit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BananaSplit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BananaSplit/Pods-BananaSplit.debug.xcconfig"; sourceTree = "<group>"; };
 		776AE34DEFBB7346F408799D /* Pods_BananaSplit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BananaSplit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEEC87972CA7DA950006E07 /* Pods-BananaSplit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BananaSplit.release.xcconfig"; path = "Pods/Target Support Files/Pods-BananaSplit/Pods-BananaSplit.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				C3D462E520664BD00079C5B1 /* individualGroupViewController.swift */,
 				C3D462EB2066621B0079C5B1 /* GroupTableViewCell.swift */,
 				C3D462ED2066628D0079C5B1 /* GroupViewController2.swift */,
+				3DCAFFEB206655E400C69B12 /* CreateAccountViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -319,7 +322,8 @@
 				3DAD1D9420662B6500B12097 /* User.swift in Sources */,
 				5F3CB2A02066444700CB4C31 /* Account.swift in Sources */,
 				3DAD1D9620662B8C00B12097 /* Group.swift in Sources */,
-				C3D462E620664BD00079C5B1 /* individualGroupViewController.swift in Sources */,
+			C3D462E620664BD00079C5B1 /* individualGroupViewController.swift in Sources */,
+				3DCAFFEC206655E400C69B12 /* CreateAccountViewController.swift in Sources */,
 				3DAD1D9D2066315000B12097 /* API.swift in Sources */,
 				3DAD1DA3206634AD00B12097 /* Constants.swift in Sources */,
 				C3D462EC2066621B0079C5B1 /* GroupTableViewCell.swift in Sources */,
