@@ -9,6 +9,8 @@
 import UIKit
 
 class individualGroupViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var coundownView: UIView!
+    @IBOutlet weak var countdownLabel: UILabel!
 
     @IBOutlet weak var label: UILabel!
 
@@ -17,6 +19,8 @@ class individualGroupViewController: UIViewController, UITableViewDelegate, UITa
     var bananaImgs: [UIImage] = []
     var debts: [String] = []
     var nums: [Int] = []
+    var timer = Timer()
+    var second = 5
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -35,6 +39,10 @@ class individualGroupViewController: UIViewController, UITableViewDelegate, UITa
     }
 
     @IBAction func rouletteAction(_ sender: Any) {
+        self.countdownLabel.isHidden = false
+        self.coundownView.isHidden = false
+        
+        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateCountdownLabel), userInfo: nil, repeats: true)
     }
     
     @IBAction func requestAction(_ sender: Any) {
@@ -110,7 +118,7 @@ class individualGroupViewController: UIViewController, UITableViewDelegate, UITa
         cell.splitAmountLabel.text = self.debts[indexPath.row]
         return cell
     }
-
+    
     @IBAction func dismissButtonAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -120,15 +128,26 @@ class individualGroupViewController: UIViewController, UITableViewDelegate, UITa
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func getRandomMember() {
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let spin = Int(arc4random_uniform(UInt32(users.count)))
+        // deselect old spin.
+        let indexPath = IndexPath(row: spin, section: 0)
+        let cell = tableView.cellForRow(at: indexPath) as! MemberTableViewCell
+        cell.setSelected(true, animated: false)
     }
-    */
+    
+    @objc func updateCountdownLabel() {
+        second = second - 1
+        self.countdownLabel.text = "\(second)"
+        
+        if (second == 0) {
+            self.timer.invalidate()
+            self.coundownView.isHidden = true
+            getRandomMember()
+        }
+
+    }
 
 }

@@ -31,4 +31,14 @@ class MemberTableViewCell: UITableViewCell {
         }
     }
     
+    override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+        super.setHighlighted(highlighted, animated: animated)
+        
+        if highlighted {
+            self.backgroundColor = UIColor.red
+        } else {
+            self.backgroundColor = UIColor.white
+        }
+    }
+    
 }

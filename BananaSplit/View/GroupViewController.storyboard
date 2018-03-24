@@ -250,6 +250,28 @@
                                 </constraints>
                                 <state key="normal" image="add"/>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efG-TX-a06">
+                                <rect key="frame" x="112.5" y="258.5" width="150" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NiA-Nh-KDh">
+                                        <rect key="frame" x="45" y="45" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="WEp-JO-oEh"/>
+                                            <constraint firstAttribute="width" constant="60" id="WoR-xf-AWg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.44798487419999999" green="0.1475779116" blue="0.042801566419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="H8b-it-lIi"/>
+                                    <constraint firstAttribute="height" constant="150" id="V1t-5I-rgJ"/>
+                                    <constraint firstItem="NiA-Nh-KDh" firstAttribute="centerX" secondItem="efG-TX-a06" secondAttribute="centerX" id="fs3-fV-qtf"/>
+                                    <constraint firstItem="NiA-Nh-KDh" firstAttribute="centerY" secondItem="efG-TX-a06" secondAttribute="centerY" id="o1G-aR-zTg"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -262,10 +284,12 @@
                             <constraint firstItem="a31-5l-5LV" firstAttribute="leading" secondItem="FFq-iC-UKd" secondAttribute="leading" constant="16" id="M5m-n9-vgp"/>
                             <constraint firstItem="rZH-J4-ETu" firstAttribute="centerX" secondItem="LGn-ep-TNM" secondAttribute="centerX" id="MPU-y5-McK"/>
                             <constraint firstItem="Lzc-Up-FMQ" firstAttribute="centerY" secondItem="5cr-wn-jgS" secondAttribute="centerY" id="NfR-95-V6w"/>
+                            <constraint firstItem="efG-TX-a06" firstAttribute="centerY" secondItem="LGn-ep-TNM" secondAttribute="centerY" id="Ubr-JK-bJ4"/>
                             <constraint firstItem="Fn4-Nv-05X" firstAttribute="top" secondItem="a31-5l-5LV" secondAttribute="bottom" constant="18" id="Xw2-xs-ciZ"/>
                             <constraint firstItem="a31-5l-5LV" firstAttribute="top" secondItem="D3D-lP-hHE" secondAttribute="bottom" constant="25" id="YBQ-ek-fXt"/>
                             <constraint firstItem="GgW-1R-ZAR" firstAttribute="top" secondItem="Fn4-Nv-05X" secondAttribute="bottom" constant="16" id="Yhs-IN-LTc"/>
                             <constraint firstItem="D3D-lP-hHE" firstAttribute="top" secondItem="rZH-J4-ETu" secondAttribute="bottom" constant="8" id="a7z-D0-hzE"/>
+                            <constraint firstItem="efG-TX-a06" firstAttribute="centerX" secondItem="LGn-ep-TNM" secondAttribute="centerX" id="atv-r5-XZh"/>
                             <constraint firstItem="FFq-iC-UKd" firstAttribute="bottom" secondItem="5cr-wn-jgS" secondAttribute="bottom" constant="16" id="cJF-Ac-ccV"/>
                             <constraint firstItem="FFq-iC-UKd" firstAttribute="trailing" secondItem="D3D-lP-hHE" secondAttribute="trailing" constant="18" id="cPb-m2-R3H"/>
                             <constraint firstItem="eW0-0g-lFf" firstAttribute="top" secondItem="FFq-iC-UKd" secondAttribute="top" constant="20" id="eP6-08-dPN"/>
@@ -288,6 +312,8 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
+                        <outlet property="coundownView" destination="efG-TX-a06" id="NP2-PK-N4u"/>
+                        <outlet property="countdownLabel" destination="NiA-Nh-KDh" id="Hzz-S1-atl"/>
                         <outlet property="label" destination="rZH-J4-ETu" id="UVQ-sx-NFH"/>
                         <outlet property="tableView" destination="Fn4-Nv-05X" id="yUn-Vh-HAr"/>
                     </connections>
