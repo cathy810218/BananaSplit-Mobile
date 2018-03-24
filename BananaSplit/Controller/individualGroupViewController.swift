@@ -16,6 +16,7 @@ class individualGroupViewController: UIViewController, UITableViewDelegate, UITa
     var label1 = ""
     var bananaImgs: [UIImage] = []
     var debts: [String] = []
+    var nums: [Int] = []
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -27,7 +28,9 @@ class individualGroupViewController: UIViewController, UITableViewDelegate, UITa
         label.text! = label1
         loadMockData()
         self.debts = ["$20", "$10", "$40", "$30"]
+        self.nums = [20, 10, 40, 30]
         self.bananaImgs = [UIImage(named: "banana1")!, UIImage(named: "banana2")!, UIImage(named: "banana3")!, UIImage(named: "banana1")!]
+        
         // Do any additional setup after loading the view.
     }
 
@@ -35,29 +38,45 @@ class individualGroupViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     @IBAction func requestAction(_ sender: Any) {
-        let nums = [20, 10, 40, 30]
-        var bodies = [Dictionary<String, Any>]()
-        for (i, user) in users.enumerated() {
-            user.ammountToPay = nums[i] as NSNumber
-            
-            if i == 0 {
+        for i in 1...nums.count - 1 {
+            if (self.users[i].transferId != nil) {
                 continue
             }
-            let money = user.ammountToPay?.intValue
+            users[i].ammountToPay = nums[i] as NSNumber
             
-//            let body =
-//                [ "originMoneyMovementAccountReferenceId": user.accId,
-//                  "destinationMoneyMovementAccountReferenceId": users[0].accId,
-//                  "transferAmount": money!,
-//                  "currencyCode": "USD",
-//                  "transferDate": "{{timestamp}}",
-//                  "memo": "for investments",
-//                  "transferType": "Internal",
-//                  "frequency": "OneTime"
-//                    ] as [String : Any]
-//            API().internalTransfer(body: body, callback: { (errorMessage, <#String?#>) in
-//                <#code#>
-//            })
+            let money = users[i].ammountToPay?.intValue
+            
+            let body =
+                [ "originMoneyMovementAccountReferenceId": users[i].accId ?? "",
+                  "destinationMoneyMovementAccountReferenceId": users[0].accId ?? "",
+                  "transferAmount": money!,
+                  "currencyCode": "USD",
+                  "transferDate": "2018-03-24",
+                  "memo": "for investments",
+                  "transferType": users[i].transferType ?? "",
+                  "frequency": "OneTime"
+//                [
+//                    "originMoneyMovementAccountReferenceId": "YHGRB+zRxznmdsOV7QpZE5Ba25ut5nliF486mFhNgk=",
+//                    "destinationMoneyMovementAccountReferenceId": "XFhWXJQOVdudjhONmdsOV7QpZE5Ba25ut5pa0N75jjoLJh=",
+//                    "transferAmount": 10,
+//                    "currencyCode": "USD",
+//                    "transferDate": "2018-03-24",
+//                    "memo": "for investments",
+//                    "transferType": "Internal",
+//                    "frequency": "OneTime"
+            
+                    ] as [String : Any]
+            
+          API().internalTransfer(body: body, callback: { (errorMessage, transferRequestId) in
+                if (errorMessage != nil) {
+                    print(errorMessage!)
+                    return
+                }
+                self.users[i].transferId = transferRequestId
+                if i == self.nums.count - 1 {
+                    self.tableView.reloadData()
+                }
+          })
         }
         
     }
@@ -70,13 +89,10 @@ class individualGroupViewController: UIViewController, UITableViewDelegate, UITa
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? Dictionary<String, Any>
                 if let users = jsonResult!["users"] as? [Dictionary<String, Any>] {
                     for user in users {
-                        self.users.append(User(json: [
-                            "name": user["name"] ?? "",
-                            "id": user["id"] ?? -1,
-                            "accId": user["accId"] ?? "N/A"]))
+                        self.users.append(User(json: user))
                     }
                 }
-
+                
             } catch {
                 // handle error
             }

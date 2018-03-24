@@ -1,24 +1,27 @@
 {
-    "users":[
-             {
-             "id":1,
-             "name":"Cathy",
-             "accId":"CSE+xlcLAmgtZJQVdudjhmUO7M5ut5nliFOezJW2I6ZLD="
-             },
-             {
-             "id":2,
-             "name":"Arrido",
-             "accId":"YHGRB+zRxznmdsOV7QpZE5Ba25ut5nliF486mFhNgk="
-             },
-             {
-             "id":3,
-             "name":"Shelly",
-             "accId":"WQE+mwrgBYGUNYXLOolUO7MElxlcLAm2gtZJW2I6MeKC0="
-             },
-             {
-             "id":4,
-             "name":"Chris",
-             "accId":"XFhWXJQOVdudjhONmdsOV7QpZE5Ba25ut5pa0N75jjoLJh="
-             }
-             ]
+    "users": [{
+              "id": 1,
+              "name": "Cathy",
+              "accId": "YHGRB+zRxznmdsOV7QpZE5Ba25ut5nliF486mFhNgk=",
+              "transferType": "ACH"
+              },
+              {
+              "id": 2,
+              "name": "Arrido",
+              "accId": "CSE+xlcLAmgtZJQVdudjhmUO7M5ut5nliFOezJW2I6ZLD=",
+              "transferType": "ACH"
+              },
+              {
+              "id": 3,
+              "name": "Shelly",
+              "accId": "WQE+mwrgBYGUNYXLOolUO7MElxlcLAm2gtZJW2I6MeKC0=",
+              "transferType": "ACH"
+              },
+              {
+              "id": 4,
+              "name": "Chris",
+              "accId": "XFhWXJQOVdudjhONmdsOV7QpZE5Ba25ut5pa0N75jjoLJh=",
+              "transferType": "Internal"
+              }
+              ]
 }
