@@ -16,7 +16,10 @@ class GroupViewController: UIViewController, UICollectionViewDelegate, UICollect
     @IBOutlet weak var name: UITextField!
     @IBAction func addGroup(_ sender: Any) {
         let newName = name.text!
-        if newName != ""{
+        if newName == "" || newName == "Add a Group Name"{
+            
+        }
+        else{
             items.append(newName)
             collectionVIew.reloadData()
         }
@@ -41,6 +44,7 @@ class GroupViewController: UIViewController, UICollectionViewDelegate, UICollect
         cell.layer.borderWidth = 1
         cell.layer.cornerRadius = 8
         
+        
         return cell
     }
     
@@ -57,7 +61,7 @@ class GroupViewController: UIViewController, UICollectionViewDelegate, UICollect
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        name.clearsOnBeginEditing = true
         // Do any additional setup after loading the view.
     }
 
