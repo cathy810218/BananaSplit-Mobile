@@ -20,6 +20,8 @@
 		3DAD1D9F2066318A00B12097 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1D9E2066318A00B12097 /* GroupViewController.swift */; };
 		3DAD1DA12066319500B12097 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1DA02066319500B12097 /* AccountViewController.swift */; };
 		3DAD1DA3206634AD00B12097 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1DA2206634AD00B12097 /* Constants.swift */; };
+		3DBB2A772066B51500B5C572 /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB2A752066B51500B5C572 /* MemberTableViewCell.swift */; };
+		3DBB2A782066B51500B5C572 /* MemberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB2A762066B51500B5C572 /* MemberTableViewCell.xib */; };
 		3DCAFFEC206655E400C69B12 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCAFFEB206655E400C69B12 /* CreateAccountViewController.swift */; };
 		5F1B4E0A20669C36005EC689 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F1B4E0920669C36005EC689 /* Users.json */; };
 		5F1B4E0C2066B620005EC689 /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B4E0B2066B620005EC689 /* LoadingOverlay.swift */; };
@@ -50,6 +52,8 @@
 		3DAD1D9E2066318A00B12097 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		3DAD1DA02066319500B12097 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		3DAD1DA2206634AD00B12097 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3DBB2A752066B51500B5C572 /* MemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
+		3DBB2A762066B51500B5C572 /* MemberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberTableViewCell.xib; sourceTree = "<group>"; };
 		3DCAFFEB206655E400C69B12 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		5F1B4E0920669C36005EC689 /* Users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
 		5F1B4E0B2066B620005EC689 /* LoadingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
@@ -136,10 +140,13 @@
 				3DAD1D812066280F00B12097 /* Assets.xcassets */,
 				3DAD1D832066280F00B12097 /* LaunchScreen.storyboard */,
 				3DAD1D972066309200B12097 /* GroupViewController.storyboard */,
+				C3D462EB2066621B0079C5B1 /* GroupTableViewCell.swift */,
 				3DAD1D99206630A600B12097 /* AccountViewController.storyboard */,
 				5F3CB2A320665BBF00CB4C31 /* AccountCell.swift */,
 				5F3CB2A520665E2400CB4C31 /* AccountCell.xib */,
 				5F1B4E0B2066B620005EC689 /* LoadingOverlay.swift */,
+				3DBB2A752066B51500B5C572 /* MemberTableViewCell.swift */,
+				3DBB2A762066B51500B5C572 /* MemberTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -151,7 +158,6 @@
 				3DAD1DA02066319500B12097 /* AccountViewController.swift */,
 				C3511E4920663EA100F0B729 /* controllerViewCell.swift */,
 				C3D462E520664BD00079C5B1 /* individualGroupViewController.swift */,
-				C3D462EB2066621B0079C5B1 /* GroupTableViewCell.swift */,
 				3DCAFFEB206655E400C69B12 /* CreateAccountViewController.swift */,
 			);
 			path = Controller;
@@ -255,6 +261,7 @@
 				5F3CB2A620665E2400CB4C31 /* AccountCell.xib in Resources */,
 				3DAD1D9A206630A600B12097 /* AccountViewController.storyboard in Resources */,
 				5F3CB29E206643BE00CB4C31 /* Accounts.json in Resources */,
+				3DBB2A782066B51500B5C572 /* MemberTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +342,7 @@
 				3DAD1DA3206634AD00B12097 /* Constants.swift in Sources */,
 				C3D462EC2066621B0079C5B1 /* GroupTableViewCell.swift in Sources */,
 				5F1B4E0C2066B620005EC689 /* LoadingOverlay.swift in Sources */,
+				3DBB2A772066B51500B5C572 /* MemberTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

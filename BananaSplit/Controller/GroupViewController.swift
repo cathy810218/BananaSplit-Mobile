@@ -54,6 +54,13 @@ class GroupViewController: UIViewController, UICollectionViewDelegate, UICollect
         return cell
     }
     
+    @IBAction func routetteAction(_ sender: Any) {
+    }
+    
+    @IBAction func requestAllAction(_ sender: Any) {
+        
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if let cell = sender as? UICollectionViewCell,
@@ -88,7 +95,7 @@ class GroupViewController: UIViewController, UICollectionViewDelegate, UICollect
         
         
         let imageView = UIImageView(image: UIImage(named: "logo"))
-        let imageSize = CGSize(width: 80, height: 50)
+        let imageSize = CGSize(width: 100, height: 60)
         let marginX = ((self.navigationController?.navigationBar.frame.size.width)! / 2) - (imageSize.width / 2);
         imageView.frame = CGRect(x: marginX, y: 0, width: imageSize.width, height: imageSize.height)
         self.navigationController?.navigationBar.addSubview(imageView)

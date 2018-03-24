@@ -8,18 +8,26 @@
 
 import UIKit
 
-class individualGroupViewController: UIViewController {
+class individualGroupViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var label: UILabel!
 
     var users : [User] = []
     var label1 = ""
+    var bananaImgs: [UIImage] = []
+    var debts: [String] = []
     
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let nib = UINib(nibName: "MemberTableViewCell", bundle: Bundle.main)
+        tableView.register(nib, forCellReuseIdentifier: "MemberCell")
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         label.text! = label1
         loadMockData()
-        
+        self.debts = ["$20", "$10", "$40", "$15", "$15"]
+        self.bananaImgs = [UIImage(named: "banana1")!, UIImage(named: "banana2")!, UIImage(named: "banana3")!, UIImage(named: "banana2")!, UIImage(named: "banana1")!]
         // Do any additional setup after loading the view.
     }
     
@@ -41,6 +49,18 @@ class individualGroupViewController: UIViewController {
                 // handle error
             }
         }
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.users.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MemberCell", for: indexPath) as! MemberTableViewCell
+        cell.nameLabel.text = self.users[indexPath.row].name
+        cell.bananaImageView!.image = self.bananaImgs[indexPath.row]
+        cell.splitAmountLabel.text = self.debts[indexPath.row]
+        return cell
     }
 
     @IBAction func dismissButtonAction(_ sender: Any) {
