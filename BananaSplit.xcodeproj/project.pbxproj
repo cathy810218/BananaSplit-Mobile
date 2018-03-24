@@ -20,6 +20,8 @@
 		3DAD1D9F2066318A00B12097 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1D9E2066318A00B12097 /* GroupViewController.swift */; };
 		3DAD1DA12066319500B12097 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1DA02066319500B12097 /* AccountViewController.swift */; };
 		3DAD1DA3206634AD00B12097 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1DA2206634AD00B12097 /* Constants.swift */; };
+		5F3CB29E206643BE00CB4C31 /* Accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F3CB29D206643BE00CB4C31 /* Accounts.json */; };
+		5F3CB2A02066444700CB4C31 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CB29F2066444700CB4C31 /* Account.swift */; };
 		96284EB2BBB761E41D54CF25 /* Pods_BananaSplit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776AE34DEFBB7346F408799D /* Pods_BananaSplit.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		3DAD1D9E2066318A00B12097 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		3DAD1DA02066319500B12097 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		3DAD1DA2206634AD00B12097 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5F3CB29D206643BE00CB4C31 /* Accounts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Accounts.json; sourceTree = "<group>"; };
+		5F3CB29F2066444700CB4C31 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		68BA86B751E5551A2F9188CA /* Pods-BananaSplit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BananaSplit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BananaSplit/Pods-BananaSplit.debug.xcconfig"; sourceTree = "<group>"; };
 		776AE34DEFBB7346F408799D /* Pods_BananaSplit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BananaSplit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEEC87972CA7DA950006E07 /* Pods-BananaSplit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BananaSplit.release.xcconfig"; path = "Pods/Target Support Files/Pods-BananaSplit/Pods-BananaSplit.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 		3DAD1D792066280F00B12097 /* BananaSplit */ = {
 			isa = PBXGroup;
 			children = (
+				5F3CB29C2066439900CB4C31 /* Resources */,
 				3DAD1D9B2066313B00B12097 /* Services */,
 				3DAD1D9220662B4000B12097 /* Controller */,
 				3DAD1D9120662B3C00B12097 /* View */,
@@ -100,6 +105,7 @@
 			children = (
 				3DAD1D9320662B6500B12097 /* User.swift */,
 				3DAD1D9520662B8C00B12097 /* Group.swift */,
+				5F3CB29F2066444700CB4C31 /* Account.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,6 +139,14 @@
 				3DAD1DA2206634AD00B12097 /* Constants.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		5F3CB29C2066439900CB4C31 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F3CB29D206643BE00CB4C31 /* Accounts.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		7E347CB499D272CDF1D01F15 /* Pods */ = {
@@ -211,6 +225,7 @@
 				3DAD1D822066280F00B12097 /* Assets.xcassets in Resources */,
 				3DAD1D802066280F00B12097 /* Main.storyboard in Resources */,
 				3DAD1D9A206630A600B12097 /* AccountViewController.storyboard in Resources */,
+				5F3CB29E206643BE00CB4C31 /* Accounts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +295,7 @@
 				3DAD1DA12066319500B12097 /* AccountViewController.swift in Sources */,
 				3DAD1D7B2066280F00B12097 /* AppDelegate.swift in Sources */,
 				3DAD1D9420662B6500B12097 /* User.swift in Sources */,
+				5F3CB2A02066444700CB4C31 /* Account.swift in Sources */,
 				3DAD1D9620662B8C00B12097 /* Group.swift in Sources */,
 				3DAD1D9D2066315000B12097 /* API.swift in Sources */,
 				3DAD1DA3206634AD00B12097 /* Constants.swift in Sources */,
