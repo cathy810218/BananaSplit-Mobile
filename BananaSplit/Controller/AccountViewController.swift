@@ -29,7 +29,9 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func loadMockData() {
+        LoadingOverlay.shared.showOverlay(view: tableView)
         API().listAccounts { (errorMessage, accounts) in
+            LoadingOverlay.shared.hideOverlayView()
             if (errorMessage != nil) {
                 print(errorMessage!)
                 return
