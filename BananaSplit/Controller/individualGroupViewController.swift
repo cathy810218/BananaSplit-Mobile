@@ -26,10 +26,39 @@ class individualGroupViewController: UIViewController, UITableViewDelegate, UITa
         self.tableView.dataSource = self
         label.text! = label1
         loadMockData()
-        self.debts = ["$20", "$10", "$40", "$15", "$15"]
-        self.bananaImgs = [UIImage(named: "banana1")!, UIImage(named: "banana2")!, UIImage(named: "banana3")!, UIImage(named: "banana2")!, UIImage(named: "banana1")!]
+        self.debts = ["$20", "$10", "$40", "$30"]
+        self.bananaImgs = [UIImage(named: "banana1")!, UIImage(named: "banana2")!, UIImage(named: "banana3")!, UIImage(named: "banana1")!]
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func requestAction(_ sender: Any) {
+        let nums = [20, 10, 40, 30]
+        var bodies = [Dictionary<String, Any>]()
+        for (i, user) in users.enumerated() {
+            user.ammountToPay = nums[i] as NSNumber
+            
+            if i == 0 {
+                continue
+            }
+            let money = user.ammountToPay?.intValue
+            
+//            let body =
+//                [ "originMoneyMovementAccountReferenceId": user.accId,
+//                  "destinationMoneyMovementAccountReferenceId": users[0].accId,
+//                  "transferAmount": money!,
+//                  "currencyCode": "USD",
+//                  "transferDate": "{{timestamp}}",
+//                  "memo": "for investments",
+//                  "transferType": "Internal",
+//                  "frequency": "OneTime"
+//                    ] as [String : Any]
+//            API().internalTransfer(body: body, callback: { (errorMessage, <#String?#>) in
+//                <#code#>
+//            })
+        }
+        
+    }
+    
     
     func loadMockData() {
         if let path = Bundle.main.path(forResource: "Users", ofType: "json") {

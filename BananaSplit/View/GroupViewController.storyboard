@@ -199,7 +199,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="requestAllAction:" destination="o3i-6m-3Gf" eventType="touchUpInside" id="WMt-6n-ojM"/>
+                                    <action selector="requestAction:" destination="9mH-Z3-CWe" eventType="touchUpInside" id="lVg-Rq-wtm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzc-Up-FMQ">
@@ -216,9 +216,6 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="routetteAction:" destination="o3i-6m-3Gf" eventType="touchUpInside" id="3fM-FP-dBe"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big-banana" translatesAutoresizingMaskIntoConstraints="NO" id="D3D-lP-hHE">
                                 <rect key="frame" x="18" y="167" width="339" height="74"/>
@@ -293,7 +290,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQT-sj-9HT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="o3i-6m-3Gf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1232.8" y="164.16791604197903"/>
         </scene>
