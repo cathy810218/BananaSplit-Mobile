@@ -10,8 +10,9 @@ import UIKit
 
 class AccountViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var tableView: UITableView!
     var accounts : [Account] = []
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +20,7 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.register(nib, forCellReuseIdentifier: "AccountCell")
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.estimatedRowHeight = 100
+        tableView.estimatedRowHeight = 50
         self.accounts = []
         // ignore credential call for now. Credentials last 2 weeks which is more than enough time for demo.
         // TODO: update API calls to include parameter for credentials and remove credentials from constants.
@@ -66,7 +67,7 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : AccountCell = tableView.dequeueReusableCell(withIdentifier: "AccountCell", for: indexPath) as! AccountCell
         cell.nameLabel.text = accounts[indexPath.row].accountNickname
-        cell.availableBalance.text = accounts[indexPath.row].availableBalance?.stringValue
+        cell.availableBalance.text = "$ " + (accounts[indexPath.row].availableBalance?.stringValue ?? "0.00")
         return cell
     }
     
