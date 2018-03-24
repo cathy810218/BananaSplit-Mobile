@@ -18,29 +18,24 @@
                 <rect key="frame" x="0.0" y="0.0" width="418" height="67.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Balance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8n-3H-e2l">
-                        <rect key="frame" x="255" y="36" width="133" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Available Balance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8n-3H-e2l">
+                        <rect key="frame" x="265" y="20" width="133" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xt-vC-ru8">
-                        <rect key="frame" x="297" y="10.5" width="91" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xt-vC-ru8">
+                        <rect key="frame" x="20" y="23" width="154" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" staticText="YES" startsMediaSession="YES"/>
+                        </accessibility>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rpv-BW-RPv">
-                        <rect key="frame" x="13" y="14" width="49" height="39"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
                 </subviews>
-                <constraints>
-                    <constraint firstAttribute="bottom" secondItem="w8n-3H-e2l" secondAttribute="bottom" constant="10.5" id="F0b-Hl-wEv"/>
-                    <constraint firstItem="3xt-vC-ru8" firstAttribute="top" secondItem="Vgt-e6-bdc" secondAttribute="top" constant="10.5" id="a8G-Hr-VnW"/>
-                    <constraint firstAttribute="trailing" secondItem="w8n-3H-e2l" secondAttribute="trailing" constant="30" id="ag6-JC-aur"/>
-                    <constraint firstAttribute="trailing" secondItem="3xt-vC-ru8" secondAttribute="trailing" constant="30" id="tDO-Bz-6Jx"/>
-                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="availableBalance" destination="w8n-3H-e2l" id="n4J-do-Llq"/>
