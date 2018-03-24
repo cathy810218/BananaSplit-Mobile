@@ -20,6 +20,7 @@
 		3DAD1D9F2066318A00B12097 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1D9E2066318A00B12097 /* GroupViewController.swift */; };
 		3DAD1DA12066319500B12097 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1DA02066319500B12097 /* AccountViewController.swift */; };
 		3DAD1DA3206634AD00B12097 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1DA2206634AD00B12097 /* Constants.swift */; };
+		3DCAFFEC206655E400C69B12 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCAFFEB206655E400C69B12 /* CreateAccountViewController.swift */; };
 		5F3CB29E206643BE00CB4C31 /* Accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F3CB29D206643BE00CB4C31 /* Accounts.json */; };
 		5F3CB2A02066444700CB4C31 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CB29F2066444700CB4C31 /* Account.swift */; };
 		5F3CB2A420665BBF00CB4C31 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CB2A320665BBF00CB4C31 /* AccountCell.swift */; };
@@ -29,7 +30,6 @@
 		C3511E4A20663EA100F0B729 /* controllerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3511E4920663EA100F0B729 /* controllerViewCell.swift */; };
 		C3D462E620664BD00079C5B1 /* individualGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D462E520664BD00079C5B1 /* individualGroupViewController.swift */; };
 		C3D462EC2066621B0079C5B1 /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D462EB2066621B0079C5B1 /* GroupTableViewCell.swift */; };
-		C3D462EE2066628D0079C5B1 /* GroupViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D462ED2066628D0079C5B1 /* GroupViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +48,7 @@
 		3DAD1D9E2066318A00B12097 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		3DAD1DA02066319500B12097 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		3DAD1DA2206634AD00B12097 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3DCAFFEB206655E400C69B12 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		5F3CB29D206643BE00CB4C31 /* Accounts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Accounts.json; sourceTree = "<group>"; };
 		5F3CB29F2066444700CB4C31 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		5F3CB2A320665BBF00CB4C31 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
@@ -59,7 +60,6 @@
 		C3511E4920663EA100F0B729 /* controllerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controllerViewCell.swift; sourceTree = "<group>"; };
 		C3D462E520664BD00079C5B1 /* individualGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = individualGroupViewController.swift; sourceTree = "<group>"; };
 		C3D462EB2066621B0079C5B1 /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
-		C3D462ED2066628D0079C5B1 /* GroupViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,6 @@
 				C3511E4920663EA100F0B729 /* controllerViewCell.swift */,
 				C3D462E520664BD00079C5B1 /* individualGroupViewController.swift */,
 				C3D462EB2066621B0079C5B1 /* GroupTableViewCell.swift */,
-				C3D462ED2066628D0079C5B1 /* GroupViewController2.swift */,
 				3DCAFFEB206655E400C69B12 /* CreateAccountViewController.swift */,
 			);
 			path = Controller;
@@ -318,11 +317,10 @@
 				C3511E4A20663EA100F0B729 /* controllerViewCell.swift in Sources */,
 				3DAD1DA12066319500B12097 /* AccountViewController.swift in Sources */,
 				3DAD1D7B2066280F00B12097 /* AppDelegate.swift in Sources */,
-				C3D462EE2066628D0079C5B1 /* GroupViewController2.swift in Sources */,
 				3DAD1D9420662B6500B12097 /* User.swift in Sources */,
 				5F3CB2A02066444700CB4C31 /* Account.swift in Sources */,
 				3DAD1D9620662B8C00B12097 /* Group.swift in Sources */,
-			C3D462E620664BD00079C5B1 /* individualGroupViewController.swift in Sources */,
+				C3D462E620664BD00079C5B1 /* individualGroupViewController.swift in Sources */,
 				3DCAFFEC206655E400C69B12 /* CreateAccountViewController.swift in Sources */,
 				3DAD1D9D2066315000B12097 /* API.swift in Sources */,
 				3DAD1DA3206634AD00B12097 /* Constants.swift in Sources */,
