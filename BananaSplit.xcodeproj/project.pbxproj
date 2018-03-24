@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D9EDA2720668CFA004325C0 /* FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EDA2620668CFA004325C0 /* FoundationExtension.swift */; };
 		3DAD1D7B2066280F00B12097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1D7A2066280F00B12097 /* AppDelegate.swift */; };
 		3DAD1D802066280F00B12097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD1D7E2066280F00B12097 /* Main.storyboard */; };
 		3DAD1D822066280F00B12097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD1D812066280F00B12097 /* Assets.xcassets */; };
 		3DAD1D852066280F00B12097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD1D832066280F00B12097 /* LaunchScreen.storyboard */; };
-		3DAD1D8E20662A8800B12097 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1D8C20662A8800B12097 /* LandingViewController.swift */; };
 		3DAD1D9420662B6500B12097 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1D9320662B6500B12097 /* User.swift */; };
 		3DAD1D9620662B8C00B12097 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1D9520662B8C00B12097 /* Group.swift */; };
 		3DAD1D982066309200B12097 /* GroupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD1D972066309200B12097 /* GroupViewController.storyboard */; };
@@ -25,22 +25,21 @@
 		5F3CB2A02066444700CB4C31 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CB29F2066444700CB4C31 /* Account.swift */; };
 		5F3CB2A420665BBF00CB4C31 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CB2A320665BBF00CB4C31 /* AccountCell.swift */; };
 		5F3CB2A620665E2400CB4C31 /* AccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3CB2A520665E2400CB4C31 /* AccountCell.xib */; };
-		3DCAFFEC206655E400C69B12 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCAFFEB206655E400C69B12 /* CreateAccountViewController.swift */; };
 		96284EB2BBB761E41D54CF25 /* Pods_BananaSplit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776AE34DEFBB7346F408799D /* Pods_BananaSplit.framework */; };
+		A2251A34206672060016CBEE /* InternalTransferDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2251A33206672060016CBEE /* InternalTransferDetail.swift */; };
 		C3511E4A20663EA100F0B729 /* controllerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3511E4920663EA100F0B729 /* controllerViewCell.swift */; };
 		C3D462E620664BD00079C5B1 /* individualGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D462E520664BD00079C5B1 /* individualGroupViewController.swift */; };
 		C3D462EC2066621B0079C5B1 /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D462EB2066621B0079C5B1 /* GroupTableViewCell.swift */; };
-		A2251A34206672060016CBEE /* InternalTransferDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2251A33206672060016CBEE /* InternalTransferDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D9EDA2620668CFA004325C0 /* FoundationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtension.swift; sourceTree = "<group>"; };
 		3DAD1D772066280F00B12097 /* BananaSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BananaSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DAD1D7A2066280F00B12097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DAD1D7F2066280F00B12097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DAD1D812066280F00B12097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DAD1D842066280F00B12097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DAD1D862066280F00B12097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DAD1D8C20662A8800B12097 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		3DAD1D9320662B6500B12097 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3DAD1D9520662B8C00B12097 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		3DAD1D972066309200B12097 /* GroupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GroupViewController.storyboard; sourceTree = "<group>"; };
@@ -54,14 +53,13 @@
 		5F3CB29F2066444700CB4C31 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		5F3CB2A320665BBF00CB4C31 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 		5F3CB2A520665E2400CB4C31 /* AccountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountCell.xib; sourceTree = "<group>"; };
-		3DCAFFEB206655E400C69B12 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		68BA86B751E5551A2F9188CA /* Pods-BananaSplit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BananaSplit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BananaSplit/Pods-BananaSplit.debug.xcconfig"; sourceTree = "<group>"; };
 		776AE34DEFBB7346F408799D /* Pods_BananaSplit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BananaSplit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEEC87972CA7DA950006E07 /* Pods-BananaSplit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BananaSplit.release.xcconfig"; path = "Pods/Target Support Files/Pods-BananaSplit/Pods-BananaSplit.release.xcconfig"; sourceTree = "<group>"; };
+		A2251A33206672060016CBEE /* InternalTransferDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalTransferDetail.swift; sourceTree = "<group>"; };
 		C3511E4920663EA100F0B729 /* controllerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controllerViewCell.swift; sourceTree = "<group>"; };
 		C3D462E520664BD00079C5B1 /* individualGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = individualGroupViewController.swift; sourceTree = "<group>"; };
 		C3D462EB2066621B0079C5B1 /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
-		A2251A33206672060016CBEE /* InternalTransferDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalTransferDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +142,6 @@
 		3DAD1D9220662B4000B12097 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3DAD1D8C20662A8800B12097 /* LandingViewController.swift */,
 				3DAD1D9E2066318A00B12097 /* GroupViewController.swift */,
 				3DAD1DA02066319500B12097 /* AccountViewController.swift */,
 				C3511E4920663EA100F0B729 /* controllerViewCell.swift */,
@@ -160,6 +157,7 @@
 			children = (
 				3DAD1D9C2066315000B12097 /* API.swift */,
 				3DAD1DA2206634AD00B12097 /* Constants.swift */,
+				3D9EDA2620668CFA004325C0 /* FoundationExtension.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -317,11 +315,11 @@
 				3DAD1D9F2066318A00B12097 /* GroupViewController.swift in Sources */,
 				5F3CB2A420665BBF00CB4C31 /* AccountCell.swift in Sources */,
 				A2251A34206672060016CBEE /* InternalTransferDetail.swift in Sources */,
-				3DAD1D8E20662A8800B12097 /* LandingViewController.swift in Sources */,
 				C3511E4A20663EA100F0B729 /* controllerViewCell.swift in Sources */,
 				3DAD1DA12066319500B12097 /* AccountViewController.swift in Sources */,
 				3DAD1D7B2066280F00B12097 /* AppDelegate.swift in Sources */,
 				3DAD1D9420662B6500B12097 /* User.swift in Sources */,
+				3D9EDA2720668CFA004325C0 /* FoundationExtension.swift in Sources */,
 				5F3CB2A02066444700CB4C31 /* Account.swift in Sources */,
 				3DAD1D9620662B8C00B12097 /* Group.swift in Sources */,
 				C3D462E620664BD00079C5B1 /* individualGroupViewController.swift in Sources */,

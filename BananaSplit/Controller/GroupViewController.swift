@@ -28,7 +28,10 @@ class GroupViewController: UIViewController, UICollectionViewDelegate, UICollect
     }
     @IBOutlet weak var collectionVIew: UICollectionView!
     
-
+    @IBAction func signoutAction(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "access_token")
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.items.count
     }
@@ -62,7 +65,19 @@ class GroupViewController: UIViewController, UICollectionViewDelegate, UICollect
     override func viewDidLoad() {
         super.viewDidLoad()
         name.clearsOnBeginEditing = true
-        // Do any additional setup after loading the view.
+        navigationController?.navigationBar.barTintColor = UIColor.white
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.tintColor = UIColor.brown
+        let img = UIImage()
+        navigationController?.navigationBar.shadowImage = img
+        self.navigationController?.navigationBar.setBackgroundImage(img, for: UIBarMetrics.default)
+        
+        
+        let imageView = UIImageView(image: UIImage(named: "logo"))
+        let imageSize = CGSize(width: 80, height: 50)
+        let marginX = ((self.navigationController?.navigationBar.frame.size.width)! / 2) - (imageSize.width / 2);
+        imageView.frame = CGRect(x: marginX, y: 0, width: imageSize.width, height: imageSize.height)
+        self.navigationController?.navigationBar.addSubview(imageView)
     }
 
     

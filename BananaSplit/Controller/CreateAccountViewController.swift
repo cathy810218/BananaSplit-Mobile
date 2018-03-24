@@ -10,21 +10,13 @@ import UIKit
 
 class CreateAccountViewController: UIViewController {
     
+    
+    @IBAction func loginAction(_ sender: Any) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.barTintColor = UIColor.white
-        navigationController?.navigationBar.isTranslucent = true
-        navigationController?.navigationBar.tintColor = UIColor.brown
-        let img = UIImage()
-        navigationController?.navigationBar.shadowImage = img
-        self.navigationController?.navigationBar.setBackgroundImage(img, for: UIBarMetrics.default)
 
-        
-        let imageView = UIImageView(image: UIImage(named: "logo"))
-        let imageSize = CGSize(width: 80, height: 50)
-        let marginX = ((self.navigationController?.navigationBar.frame.size.width)! / 2) - (imageSize.width / 2);
-        imageView.frame = CGRect(x: marginX, y: 0, width: imageSize.width, height: imageSize.height)
-        self.navigationController?.navigationBar.addSubview(imageView)
 
     }
 
@@ -32,6 +24,5 @@ class CreateAccountViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
 }
