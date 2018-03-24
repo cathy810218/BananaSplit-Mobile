@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "accounts-active.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "bill.png",
       "scale" : "2x"
     },
     {
