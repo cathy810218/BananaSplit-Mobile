@@ -31,15 +31,15 @@ class API {
             }
         }
     }
-    
+
     func listAccounts(callback: @escaping (String?, [Account]?) -> Void) {
         let url = "https://api.dxhackathon.com/money-movement/accounts"
         let accessToken = UserDefaults.standard.string(forKey: "access_token")
         let headers = ["Accept": "application/json;v=0",
                        "Authorization": "Bearer " + accessToken!]
-        
+
         var accountsArray: [Account] = [];
-        
+
         // build and send request
         Alamofire.request(
             url,
@@ -53,7 +53,7 @@ class API {
                     if (response.error != nil) {
                         callback("Error! \(response.description)", nil);
                     }
-                    
+
                     if let accounts = JSON["accounts"] as? [Dictionary<String, Any>] {
                         for accountObject in accounts {
                             accountsArray.append(Account(json: accountObject))
