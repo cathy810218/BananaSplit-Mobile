@@ -16,7 +16,7 @@ class GroupViewController: UIViewController, UICollectionViewDelegate, UICollect
     @IBOutlet weak var name: UITextField!
     @IBAction func addGroup(_ sender: Any) {
         let newName = name.text!
-        if newName == "" || newName == "Add a Group Name"{
+        if newName == "" || newName == "Add a Group Name" {
             
         }
         else{

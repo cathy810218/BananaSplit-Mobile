@@ -21,6 +21,7 @@
 		3DAD1DA12066319500B12097 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1DA02066319500B12097 /* AccountViewController.swift */; };
 		3DAD1DA3206634AD00B12097 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1DA2206634AD00B12097 /* Constants.swift */; };
 		3DCAFFEC206655E400C69B12 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCAFFEB206655E400C69B12 /* CreateAccountViewController.swift */; };
+		5F1B4E0A20669C36005EC689 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F1B4E0920669C36005EC689 /* Users.json */; };
 		5F3CB29E206643BE00CB4C31 /* Accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F3CB29D206643BE00CB4C31 /* Accounts.json */; };
 		5F3CB2A02066444700CB4C31 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CB29F2066444700CB4C31 /* Account.swift */; };
 		5F3CB2A420665BBF00CB4C31 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CB2A320665BBF00CB4C31 /* AccountCell.swift */; };
@@ -49,6 +50,7 @@
 		3DAD1DA02066319500B12097 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		3DAD1DA2206634AD00B12097 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3DCAFFEB206655E400C69B12 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		5F1B4E0920669C36005EC689 /* Users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
 		5F3CB29D206643BE00CB4C31 /* Accounts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Accounts.json; sourceTree = "<group>"; };
 		5F3CB29F2066444700CB4C31 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		5F3CB2A320665BBF00CB4C31 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				5F3CB29D206643BE00CB4C31 /* Accounts.json */,
+				5F1B4E0920669C36005EC689 /* Users.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				3DAD1D982066309200B12097 /* GroupViewController.storyboard in Resources */,
 				3DAD1D822066280F00B12097 /* Assets.xcassets in Resources */,
 				3DAD1D802066280F00B12097 /* Main.storyboard in Resources */,
+				5F1B4E0A20669C36005EC689 /* Users.json in Resources */,
 				5F3CB2A620665E2400CB4C31 /* AccountCell.xib in Resources */,
 				3DAD1D9A206630A600B12097 /* AccountViewController.storyboard in Resources */,
 				5F3CB29E206643BE00CB4C31 /* Accounts.json in Resources */,
