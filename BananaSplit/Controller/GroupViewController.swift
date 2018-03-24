@@ -54,13 +54,6 @@ class GroupViewController: UIViewController, UICollectionViewDelegate, UICollect
         return cell
     }
     
-    @IBAction func routetteAction(_ sender: Any) {
-    }
-    
-    @IBAction func requestAllAction(_ sender: Any) {
-        
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if let cell = sender as? UICollectionViewCell,

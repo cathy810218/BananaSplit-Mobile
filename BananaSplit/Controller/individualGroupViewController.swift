@@ -30,6 +30,9 @@ class individualGroupViewController: UIViewController, UITableViewDelegate, UITa
         self.bananaImgs = [UIImage(named: "banana1")!, UIImage(named: "banana2")!, UIImage(named: "banana3")!, UIImage(named: "banana1")!]
         // Do any additional setup after loading the view.
     }
+
+    @IBAction func rouletteAction(_ sender: Any) {
+    }
     
     @IBAction func requestAction(_ sender: Any) {
         let nums = [20, 10, 40, 30]
