@@ -22,6 +22,8 @@
 		3DAD1DA3206634AD00B12097 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1DA2206634AD00B12097 /* Constants.swift */; };
 		5F3CB29E206643BE00CB4C31 /* Accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F3CB29D206643BE00CB4C31 /* Accounts.json */; };
 		5F3CB2A02066444700CB4C31 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CB29F2066444700CB4C31 /* Account.swift */; };
+		5F3CB2A420665BBF00CB4C31 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CB2A320665BBF00CB4C31 /* AccountCell.swift */; };
+		5F3CB2A620665E2400CB4C31 /* AccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3CB2A520665E2400CB4C31 /* AccountCell.xib */; };
 		96284EB2BBB761E41D54CF25 /* Pods_BananaSplit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776AE34DEFBB7346F408799D /* Pods_BananaSplit.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		3DAD1DA2206634AD00B12097 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5F3CB29D206643BE00CB4C31 /* Accounts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Accounts.json; sourceTree = "<group>"; };
 		5F3CB29F2066444700CB4C31 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		5F3CB2A320665BBF00CB4C31 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
+		5F3CB2A520665E2400CB4C31 /* AccountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountCell.xib; sourceTree = "<group>"; };
 		68BA86B751E5551A2F9188CA /* Pods-BananaSplit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BananaSplit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BananaSplit/Pods-BananaSplit.debug.xcconfig"; sourceTree = "<group>"; };
 		776AE34DEFBB7346F408799D /* Pods_BananaSplit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BananaSplit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEEC87972CA7DA950006E07 /* Pods-BananaSplit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BananaSplit.release.xcconfig"; path = "Pods/Target Support Files/Pods-BananaSplit/Pods-BananaSplit.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				3DAD1D832066280F00B12097 /* LaunchScreen.storyboard */,
 				3DAD1D972066309200B12097 /* GroupViewController.storyboard */,
 				3DAD1D99206630A600B12097 /* AccountViewController.storyboard */,
+				5F3CB2A320665BBF00CB4C31 /* AccountCell.swift */,
+				5F3CB2A520665E2400CB4C31 /* AccountCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -224,6 +230,7 @@
 				3DAD1D982066309200B12097 /* GroupViewController.storyboard in Resources */,
 				3DAD1D822066280F00B12097 /* Assets.xcassets in Resources */,
 				3DAD1D802066280F00B12097 /* Main.storyboard in Resources */,
+				5F3CB2A620665E2400CB4C31 /* AccountCell.xib in Resources */,
 				3DAD1D9A206630A600B12097 /* AccountViewController.storyboard in Resources */,
 				5F3CB29E206643BE00CB4C31 /* Accounts.json in Resources */,
 			);
@@ -291,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DAD1D9F2066318A00B12097 /* GroupViewController.swift in Sources */,
+				5F3CB2A420665BBF00CB4C31 /* AccountCell.swift in Sources */,
 				3DAD1D8E20662A8800B12097 /* LandingViewController.swift in Sources */,
 				3DAD1DA12066319500B12097 /* AccountViewController.swift in Sources */,
 				3DAD1D7B2066280F00B12097 /* AppDelegate.swift in Sources */,
