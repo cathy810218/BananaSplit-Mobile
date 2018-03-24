@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HjM-nP-70f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HjM-nP-70f">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -50,55 +50,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wxk-s3-8ZY">
-                                <rect key="frame" x="0.0" y="190" width="375" height="428"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wxk-s3-8ZY">
+                                <rect key="frame" x="16" y="58" width="343" height="505"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xZa-pc-Z44">
-                                <rect key="frame" x="137.5" y="20" width="100" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Sjc-za-Vxn"/>
-                                    <constraint firstAttribute="width" constant="100" id="h1K-TJ-oI5"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAL-Zv-RX0">
-                                <rect key="frame" x="120" y="96" width="136" height="32.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <color key="textColor" red="0.41400834920000001" green="0.16975319389999999" blue="0.082315422590000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1C-Eo-ZmG">
-                                <rect key="frame" x="67.5" y="145" width="240" height="35"/>
-                                <color key="backgroundColor" red="0.44798487424850464" green="0.1475779116153717" blue="0.042801566421985626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="7F8-tW-G9F"/>
-                                    <constraint firstAttribute="width" constant="240" id="ilE-7w-Dh1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <state key="normal" title="Open Account">
-                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="G1C-Eo-ZmG" firstAttribute="centerX" secondItem="rUw-N2-SH7" secondAttribute="centerX" id="CFo-Bn-sz1"/>
-                            <constraint firstItem="wxk-s3-8ZY" firstAttribute="top" secondItem="G1C-Eo-ZmG" secondAttribute="bottom" constant="10" id="PAJ-xj-Xr0"/>
-                            <constraint firstItem="wxk-s3-8ZY" firstAttribute="centerX" secondItem="rUw-N2-SH7" secondAttribute="centerX" id="QIH-Vp-2cy"/>
-                            <constraint firstItem="G1C-Eo-ZmG" firstAttribute="top" secondItem="kAL-Zv-RX0" secondAttribute="bottom" constant="16" id="QrN-85-C6W"/>
-                            <constraint firstItem="kAL-Zv-RX0" firstAttribute="top" secondItem="xZa-pc-Z44" secondAttribute="bottom" constant="16" id="RWf-k2-tRK"/>
-                            <constraint firstItem="wxk-s3-8ZY" firstAttribute="leading" secondItem="Nxu-Rv-qAP" secondAttribute="leading" id="WgB-sN-VHG"/>
-                            <constraint firstItem="Nxu-Rv-qAP" firstAttribute="trailing" secondItem="wxk-s3-8ZY" secondAttribute="trailing" id="ggR-9v-Mcq"/>
-                            <constraint firstItem="kAL-Zv-RX0" firstAttribute="centerX" secondItem="rUw-N2-SH7" secondAttribute="centerX" id="hFZ-d0-BXF"/>
-                            <constraint firstItem="xZa-pc-Z44" firstAttribute="centerX" secondItem="rUw-N2-SH7" secondAttribute="centerX" id="iyy-Aq-iLa"/>
-                            <constraint firstItem="Nxu-Rv-qAP" firstAttribute="bottom" secondItem="wxk-s3-8ZY" secondAttribute="bottom" id="nHN-cL-VZM"/>
-                            <constraint firstItem="xZa-pc-Z44" firstAttribute="top" secondItem="rUw-N2-SH7" secondAttribute="top" constant="20" id="wJP-QL-PA6"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Nxu-Rv-qAP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="account-active" id="1dQ-wq-cXB"/>
@@ -109,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="msi-3B-hnB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-295.19999999999999" y="27.436281859070466"/>
+            <point key="canvasLocation" x="-295" y="28"/>
         </scene>
         <!--GroupViewController-->
         <scene sceneID="PC6-gh-z4x">
@@ -170,7 +128,6 @@
     <resources>
         <image name="account-active" width="27" height="27"/>
         <image name="bill" width="27" height="27"/>
-        <image name="logo" width="200" height="120"/>
         <image name="more" width="27" height="27"/>
         <image name="transfer" width="27" height="27"/>
     </resources>

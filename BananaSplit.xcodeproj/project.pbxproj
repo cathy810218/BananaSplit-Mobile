@@ -22,6 +22,7 @@
 		3DAD1DA3206634AD00B12097 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD1DA2206634AD00B12097 /* Constants.swift */; };
 		3DCAFFEC206655E400C69B12 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCAFFEB206655E400C69B12 /* CreateAccountViewController.swift */; };
 		5F1B4E0A20669C36005EC689 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F1B4E0920669C36005EC689 /* Users.json */; };
+		5F1B4E0C2066B620005EC689 /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B4E0B2066B620005EC689 /* LoadingOverlay.swift */; };
 		5F3CB29E206643BE00CB4C31 /* Accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F3CB29D206643BE00CB4C31 /* Accounts.json */; };
 		5F3CB2A02066444700CB4C31 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CB29F2066444700CB4C31 /* Account.swift */; };
 		5F3CB2A420665BBF00CB4C31 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CB2A320665BBF00CB4C31 /* AccountCell.swift */; };
@@ -51,6 +52,7 @@
 		3DAD1DA2206634AD00B12097 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3DCAFFEB206655E400C69B12 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		5F1B4E0920669C36005EC689 /* Users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
+		5F1B4E0B2066B620005EC689 /* LoadingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
 		5F3CB29D206643BE00CB4C31 /* Accounts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Accounts.json; sourceTree = "<group>"; };
 		5F3CB29F2066444700CB4C31 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		5F3CB2A320665BBF00CB4C31 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				3DAD1D99206630A600B12097 /* AccountViewController.storyboard */,
 				5F3CB2A320665BBF00CB4C31 /* AccountCell.swift */,
 				5F3CB2A520665E2400CB4C31 /* AccountCell.xib */,
+				5F1B4E0B2066B620005EC689 /* LoadingOverlay.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				3DAD1D9D2066315000B12097 /* API.swift in Sources */,
 				3DAD1DA3206634AD00B12097 /* Constants.swift in Sources */,
 				C3D462EC2066621B0079C5B1 /* GroupTableViewCell.swift in Sources */,
+				5F1B4E0C2066B620005EC689 /* LoadingOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
