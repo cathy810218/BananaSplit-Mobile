@@ -6,7 +6,7 @@ https://www.figma.com/file/BSfQRAqISxU6UvnQfutlIzAC/banana-split
 
 ## License
 
-Copyright (C) 2016-2018 Adrian Prananda, Arrido Arfiado, Cathy Oun, and Chris Gores
+Copyright (C) 2016-2018 Adrian Prananda, Arrido Arfiadi, Cathy Oun, and Chris Gores
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
